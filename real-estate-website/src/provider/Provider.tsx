@@ -1,7 +1,7 @@
 import Header from '@/components/Header'
 import React from 'react'
 
-function provider({children}:any) {
+function Provider({children}:any) {
   return (
     <div>
         <Header/>
@@ -9,4 +9,4 @@ function provider({children}:any) {
   )
 }
 
-export default provider
+export default Provider

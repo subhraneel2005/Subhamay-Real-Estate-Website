@@ -1,8 +1,24 @@
+import Image from 'next/image'
 import React from 'react'
+import { Button } from './ui/button'
+import {Plus} from "lucide-react"
 
 function Header() {
   return (
-    <div>Header</div>
+    <div className='p-6 px-10 top-0 w-full z-10 bg-white flex justify-between shadow-sm fixed '>
+      <div className='flex gap-12 items-center'>
+        <Image src={'/next.svg'} alt='logo' width={150} height={150}/>
+          <ul className='hidden md:flex gap-10'>
+            <li className='hover:text-primary font-medium text-sm cursor-pointer'>For Sale</li>
+            <li className='hover:text-primary font-medium text-sm cursor-pointer'>For Rent</li>
+            <li className='hover:text-primary font-medium text-sm cursor-pointer'>Agent Finder</li>
+          </ul>
+      </div>
+      <div className='flex gap-2'>
+        <Button className='flex gap-2'><Plus className='h-5'/> Post your Ad</Button>
+        <Button variant='outline'>Login</Button>
+        </div>
+    </div>
   )
 }
 
