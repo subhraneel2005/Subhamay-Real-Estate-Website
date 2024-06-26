@@ -5,7 +5,7 @@ function Provider({children}:any) {
   return (
     <div>
         <Header/>
-        <div className='m-32'>{children}</div>
+        <div className='mt-32'>{children}</div>
         </div>
   )
 }
