@@ -1,5 +1,5 @@
+import GoogleAddressSearch from '@/app/_components/GoogleAddressSearch';
 import React from 'react';
-import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 
 function AddNewListing() {
   return (
@@ -7,9 +7,7 @@ function AddNewListing() {
         <h2 className='font-bold text-2xl'>Add New Listing</h2>
         <div>
             <h2 className='text-gray-500'>Enter Address which you want to list</h2>
-            <GooglePlacesAutocomplete
-                apiKey={process.env.NEXT_PUBLIC_GOOGLE_PLACE_API_KEY!}
-            />
+            <GoogleAddressSearch/>
         </div>
     </div>
   )
