@@ -8,7 +8,7 @@ function AddNewListing() {
     <div className='p-10 flex flex-col gap-5 justify-center items-center'>
         <h2 className='font-bold text-2xl'>Add New Listing</h2>
         
-        <div className='p-10 px-28 rounded-lg border shadow-md flex flex-col gap-5 w-full'>
+        <div className='p-10 px-28 rounded-lg border shadow-md flex flex-col gap-5 w-[80%]'>
           <h2 className='text-gray-500'>Enter Address which you want to list</h2>
           <GoogleAddressSearch/>
           <Button>Next</Button>
