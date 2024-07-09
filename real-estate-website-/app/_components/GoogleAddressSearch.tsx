@@ -7,7 +7,7 @@ function GoogleAddressSearch() {
   return (
     <div>
         <GooglePlacesAutocomplete
-                apiKey={process.env.NEXT_PUBLIC_GOOGLE_PLACE_API_KEY!}
+            apiKey={process.env.NEXT_PUBLIC_GOOGLE_PLACE_API_KEY!}
             selectProps={{
                 placeholder:'Search Property Address',
                 isClearable:true,
