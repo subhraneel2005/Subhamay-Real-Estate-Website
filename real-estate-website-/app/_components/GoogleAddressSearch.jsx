@@ -9,7 +9,7 @@ function GoogleAddressSearch({selectedAddress, setCoordinates}) {
 
   return (
     <div className='w-full flex items-center'>
-      <MapPin className='cursor-pointer h-10 w-10 p-2 text-primary bg-purple-200 rounded-l-lg'/>
+      <MapPin className='cursor-pointer h-10 mr-4 w-10 p-2 text-primary bg-purple-200 rounded-l-lg'/>
         <GooglePlacesAutocomplete
             apiKey={process.env.NEXT_PUBLIC_GOOGLE_PLACE_API_KEY}
             selectProps={{
