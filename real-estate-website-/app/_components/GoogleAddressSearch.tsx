@@ -15,13 +15,19 @@ function GoogleAddressSearch() {
                 isClearable:true,
                 className:'w-full',
                 onChange:(place) => {
-                    console.log(place);
-                    geocodeByAddress(place!.label)
-                    .then((result => getLatLng(result[0])))
-                    .then(({lat, lng}) => {
-                      console.log(lat, lng);
-                      
-                    })
+                    if(place && place.label) {
+                      console.log(place);
+                      geocodeByAddress(place.label)
+                      .then((result => getLatLng(result[0])))
+                      .then(({lat, lng}) => {
+                        console.log(lat, lng);
+                      })
+                      .catch(error => {
+                        console.error("Geocoding error:", error);
+                      });
+                    } else {
+                      console.warn("Invalid place object:", place);
+                    }
                 }
             }}
         />
